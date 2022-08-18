@@ -17,25 +17,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
-
+const mainTitleEl =  document.getElementById('main-title');
+mainTitleEl.innerHTML = 'El Gran DOM'
 
   // Part 2
-
+const bodyEl = document.querySelector('body');
+bodyEl.style.backgroundColor = 'teal'
 
   // Part 3
-
+const favThingsEl = document.getElementById('favorite-things');
+favThingsEl.removeChild(favThingsEl.lastElementChild)
 
   // Part 4
-
-
+specialTitleEl = document.querySelectorAll('.special-title');
+for (let specialTitleEls of specialTitleEl) {
+specialTitleEls.style.fontSize = '2rem';
+}
   // Part 5
-
+const pastRacesEl = document.getElementById('past-races')
+if (pastRacesEl.hasChildNodes()) {
+pastRacesEl.removeChild(pastRacesEl.children[3]);
+}
 
   // Part 6
-
+const liEl = document.createElement('li');
+liEl.textContent = 'Miami'
+pastRacesEl.appendChild(liEl)
 
   // Part 7
-
+const miamiDiv = document.createElement('#main > #blog-post-purple');
+miamiDiv.innerHTML = 'hi'
 
   // Part 8
 
