@@ -45,10 +45,11 @@ liEl.textContent = 'Miami'
 pastRacesEl.appendChild(liEl)
 
   // Part 7
-const miamiDiv = document.createElement('#main > #blog-post-purple');
-miamiDiv.innerHTML = 'hi'
+
 
   // Part 8
+const quoteEl = document.getElementById('quote-title');
+quoteEl.addEventListener('click' 
 
 
   // Part 9
