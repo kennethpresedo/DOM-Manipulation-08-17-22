@@ -45,14 +45,33 @@ liEl.textContent = 'Miami'
 pastRacesEl.appendChild(liEl)
 
   // Part 7
+const divEl = document.createElement('div');
+divEl.setAttribute('class', 'blog-post')
 
+const mainEl = document.querySelector('.main')
+mainEl.append(divEl)
+
+const divHeaderEl = document.createElement('h2')
+divHeaderEl.textContent = 'Miami'
+divEl.appendChild(divHeaderEl)
+const divP = document.createElement('p')
+divP.textContent = 'VAMOS A LA PLAYA QUE HACE CALOR!'
+divEl.appendChild(divP)
 
   // Part 8
-const quoteEl = document.getElementById('quote-title');
-quoteEl.addEventListener('click' 
+const quoteEl = document.getElementById('quote-title')
+  quoteEl.addEventListener('click', randomQuote)
 
 
   // Part 9
+const blogPostEl = document.querySelectorAll('.blog-post');
+blogPostEl.addEventListener('mouseout', (event) => { 
+  event.clasList.toggle('.purple')
+
+
+})
+
+
 
 
 
